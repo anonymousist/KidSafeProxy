@@ -123,12 +123,11 @@ if ($parms->getParm('user')!='' && $parms->getParm('password') != '')
 		}
 		// even if local is allowed we still provide a warning in case it's a misconfigured client.
 		$message .= "<p>WARNING: If you are not on the proxy computer please set your browser to bypass proxy for local network to allow login. </p>\n";
-	}
-	
+	}	
 	
 	// get client information 
 	// this is stored for the benefit of the dashboard - ignored by the proxy app helper
-	$client_browser = get_browser(null, true);
+	$client_browser = get_browser($_SERVER['HTTP_USER_AGENT'], true);
 	$browser_string = $client_browser['platform'].' - '.$client_browser['parent'];
 	
 	$login_time = time();
