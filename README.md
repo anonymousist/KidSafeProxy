@@ -12,5 +12,7 @@ KidSafe connects to existing free and open source software, specifically running
 <h2>Credit</h2>
 This code is hosted here with the permission of the original author Stewart Watkiss
 
-<strong>Original Author:</strong> Stewart Watkiss (http://www.penguintutor.com/)
-<strong>GitHub Admin / Documentation and Development:</strong> David Kittell (http://www.kittell.net)
+<ul>
+<li><strong>Original Author:</strong> Stewart Watkiss (http://www.penguintutor.com/)</li>
+<li><strong>GitHub Admin / Documentation and Development:</strong> David Kittell (http://www.kittell.net)</li>
+</ul>
