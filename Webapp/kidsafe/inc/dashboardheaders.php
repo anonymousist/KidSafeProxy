@@ -64,7 +64,7 @@ if (isset ($user) && ($user->isAdmin() || $user->isSupervisor()))
 //$html_menu .= "</div>\n";
 
 
-if ($username == '')
+if (!isset ($username) || $username == '')
 {
 	$statusline = "<a href=\"dashboardlogin.php\">Login</a>";
 }
