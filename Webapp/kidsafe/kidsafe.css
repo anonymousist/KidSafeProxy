@@ -1,0 +1,167 @@
+#mainlogin {
+	clear:both;
+	background:#ccffee;
+}
+
+#adminaccess {
+	clear:both;
+}
+
+#allowsite {
+	background:#e0dbff;
+
+}
+
+#permituser {
+	float:left;
+	height: 100%;
+	background:#e6f9c9;
+}
+
+
+span.log-accept {
+	background: #33FFCC;
+}
+
+
+span.log-default {
+	background: 	#FFCC66;
+}
+
+span.log-reject {
+	background: #FF3333;
+}
+
+/* don't underline links within log viewer */
+#log a {
+	text-decoration: none;
+}
+
+
+
+div#login-status {
+	text-align: right;
+	background-color: lightgrey;
+	padding: 5px;
+}
+
+div#login-status a {
+	text-decoration: none;
+}
+
+
+div#mainmenu {
+	clear: both;
+	width: 100%;
+	background: #e2d4e7;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+	border-color: #b15cb2;  
+	font-weight: bold;
+}
+
+
+#mainmenu {
+	width: 100%;
+	background: #e2d4e7;
+	float:left;	
+	font-size: 16px;
+}
+
+
+#mainmenu ul {
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 5px;
+	margin-right: 20px;
+	padding: 0;
+	float: left;
+}
+
+
+
+#mainmenu .submenu {
+	background: #e2d4e7;
+	font-size: 15px;
+	border-width: 2px 0px 0px 0px;
+	border-style: solid;
+	border-color: #b15cb2;  
+	margin: 0px 0px 0px 0px;
+	padding: 10px 9px 2px 1px;
+}
+
+#mainmenu a, #mainmenu h2{
+	/*font-family: arial, helvetica, sans-serif;*/
+	font-family: arial, helvetica, sans-serif;
+	display: block;
+	margin: 0px;
+	padding: 2px 9px 2px 1px;
+}
+
+
+#mainmenu h2 {
+	font-size: 17px;
+}
+
+
+#mainmenu h2 {
+	color: #fff;
+	background: #e2d4e7;
+	font-weight: normal;
+}
+
+
+#mainmenu a {
+	color: #000;
+	background: #e2d4e7;
+	text-decoration: none;
+}
+
+#mainmenu a:hover {
+	color: #a00;
+	background: #fff;
+}
+
+
+
+
+
+/* Make pull down over top of text rather than push down */
+#mainmenu ul ul {
+	font-size: 15px;
+	position: absolute;
+	width: auto;
+	z-index: 500;
+	display: none; /* hide show later */
+}
+
+
+div#mainmenu ul li:hover ul {
+	display: block;
+}
+
+
+
+#content {
+	clear: both;
+}
+
+/*Active users table - used on dashboard etc */
+table#activeusers {
+	border: outset 4pt;	
+}
+
+#activeusers td {
+	border: 1px solid;
+	text-align: left;
+	padding-right: 10px;
+}
+
+#activeusers th {
+	border: 2px solid;
+	text-align: left;
+	padding-right: 10px;
+}
