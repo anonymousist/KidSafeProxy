@@ -92,11 +92,9 @@ else
 	passwordChg($user_messages, $username);
 }
 
-
-include("inc/dashboardheaders.php");
-
 function passwordChg ($message, $username)
 {
+	include("inc/dashboardheaders.php");
 	print <<< EOT
 
 $header	
@@ -113,8 +111,7 @@ $main_menu
 	New password: <input type="password" name="newpassword" value="" size="30"> <br>
 	Repeat password: <input type="password" name="repeatpassword" value="" size="30"> <br>
 	<input type="submit" value="Change password" />
-	</form>
-	
+	</form>	
 	    
 </div>
 
@@ -122,8 +119,4 @@ $footer
 EOT;
 exit (0);
 }
-
 ?>
-
-
-
