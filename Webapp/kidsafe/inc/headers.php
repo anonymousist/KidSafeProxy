@@ -49,7 +49,7 @@ These are done as individual entries in case we need something specific
 
 
 
-if ($username == '')
+if (!isset ($username) || $username == '')
 {
 	$statusline = "<a href=\"dashboardlogin.php\">Login</a>";
 }
@@ -57,7 +57,6 @@ else
 {
 	$statusline = "Welcome: $username - <a href=\"dashboardpassword.php\">Manage account</a> - <a href=\"dashboardlogout.php\">Logout</a>";
 }
-
 
 if (!isset ($title) || $title == '')
 {
@@ -80,12 +79,14 @@ $main_banner = <<< EOT2
 </div>
 EOT2;
 
-
+if (isset ($html_menu))
+{
 $main_menu = <<< EOT3
 <div id="mainmenu">
 	$html_menu
 </div>
 EOT3;
+}
 
 
 $header = <<< EOT4
